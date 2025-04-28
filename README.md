@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🛡️ Introduction
 Dans le domaine de la cybersécurité et de la détection d'intrusions réseau, le dataset NSL-KDD s’impose comme une référence incontournable pour l’évaluation des performances des modèles de machine learning.
 Issu du célèbre jeu de données KDD Cup 1999, il corrige de nombreuses limites et biais de son prédécesseur, offrant ainsi un support robuste pour les chercheurs et praticiens spécialisés dans les Systèmes de Détection d'Intrusions (IDS).
@@ -92,3 +93,29 @@ Formulation de recommandations stratégiques pour optimiser les systèmes de dé
 
 📢 Conclusion
 Ce projet explore en profondeur les défis liés à la détection d'intrusions, en exploitant les techniques avancées de machine learning pour renforcer la défense des systèmes d'information contre les cybermenaces modern
+=======
+# Detection-des-menaces-en-cybersecuritel-using-ML-SIEM
+Amélioration de la détection des menaces en cybersécurité à l’aide du Machine Learning intégré à une solution SIEM
+ DetectionMenacePFE - Détection des Menaces en Cybersécurité par Machine Learning
+
+## 📘 Description
+
+Ce projet s'inscrit dans le cadre d’un Projet de Fin d’Études (PFE) visant à développer une solution de détection de menaces basée sur l’analyse exploratoire de données issues de logs de cybersécurité. Il constitue une première phase de préparation avant intégration avec des algorithmes de Machine Learning dans un système SIEM.
+
+---
+
+## 🗂️ Architecture du Projet (provisoire)
+
+DetectionMenacePFE/
+│
+├── notebooks/                      # Contient les notebooks Jupyter pour l’analyse exploratoire
+│   └── intrusion-detection-system-nsl-kdd.ipynb          # Notebook principal d’EDA 
+│
+├── Data/                                 # Dossier de données sources
+│   └── KDDTest+.txt
+│
+├── venv/                                 # Environnement virtuel Python (exclu par .gitignore)
+├── requirements.txt                      # Fichier listant les dépendances du projet
+├── .gitignore                            # Fichier de configuration Git pour ignorer certains fichiers
+└── README.md                             # Documentation principale du projet
+>>>>>>> 41cd2cfc0fcaf44c83893ef30b4a58f634062b98
