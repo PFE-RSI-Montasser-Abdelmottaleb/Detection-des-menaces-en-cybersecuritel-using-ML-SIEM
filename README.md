@@ -12,11 +12,11 @@ Ce projet s'inscrit dans le cadre d’un Projet de Fin d’Études (PFE) visant 
 
 DetectionMenacePFE/
 │
-├── notebooks/                            # Contient les notebooks Jupyter pour l’analyse exploratoire
-│   └── eda_cybersecurity.ipynb           # Notebook principal d’EDA (Exploratory Data Analysis)
+├── notebooks/                      # Contient les notebooks Jupyter pour l’analyse exploratoire
+│   └── intrusion-detection-system-nsl-kdd.ipynb          # Notebook principal d’EDA 
 │
 ├── Data/                                 # Dossier de données sources
-│   └── cybersecurity_attacks.csv
+│   └── KDDTest+.txt
 │
 ├── venv/                                 # Environnement virtuel Python (exclu par .gitignore)
 ├── requirements.txt                      # Fichier listant les dépendances du projet
