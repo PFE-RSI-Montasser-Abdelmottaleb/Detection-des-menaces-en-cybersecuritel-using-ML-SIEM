@@ -118,4 +118,10 @@ DetectionMenacePFE/
 ├── requirements.txt                      # Fichier listant les dépendances du projet
 ├── .gitignore                            # Fichier de configuration Git pour ignorer certains fichiers
 └── README.md                             # Documentation principale du projet
+
+
+mise à jour d'avancement :   1/ automatisation total de system d' integration de model ML de detection d'attack avec le pipeline ELK beat
+                             2/ lancement d'un flask api pour recevoire les logs du logstash comme requete et faire appel au model enregistré .joblib et enfin envoyer une reponse au logstash avec une prédiction  
+                             3/la creation d'un fichier .ds de type stream avec son continu qui enregistre pour analyser les logs en temps réel due au "simulateur log .py"
+                             4/les logs stream  circulent avec succé dans le pipeline via une script python simulateur_logs.py qui génére les logs sous le format et continu adequat 
 >>>>>>> 41cd2cfc0fcaf44c83893ef30b4a58f634062b98
