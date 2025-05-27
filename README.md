@@ -37,13 +37,16 @@ Ce projet implémente une architecture locale permettant de détecter des intrus
 # 2 Architecture générale
 
  1/graph TD
+ 
     A[Serveur de logs simulé] -->|JSON logs| B[Filebeat]
     B --> C[Logstash]
     C -->|Appel HTTP| D[API Flask (ML)]
     D -->|Résultat prédiction| C
     C --> E[Elasticsearch]
     E --> F[Kibana]
+    
  2/  Stack utilisée
+
 Composant	Version	Rôle
 Python	3.x	Exécution du modèle ML et scripts
 Flask	2.3.3	API REST de prédiction ML
