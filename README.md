@@ -117,7 +117,10 @@ DetectionMenacePFE/
 ├── venv/                                 # Environnement virtuel Python (exclu par .gitignore)
 ├── requirements.txt                      # Fichier listant les dépendances du projet
 ├── .gitignore                            # Fichier de configuration Git pour ignorer certains fichiers
-└── README.md                             # Documentation principale du projet
+└── README.md                             # Documentation principale du projet 
+
+## Dockeurisation Visualisation et Dashboargin du Projet est achevé
+
 
 
 mise à jour d'avancement :   1/ automatisation total de system d' integration de model ML de detection d'attack avec le pipeline ELK beat
