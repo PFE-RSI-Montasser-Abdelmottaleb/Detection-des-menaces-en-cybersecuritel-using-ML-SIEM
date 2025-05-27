@@ -25,3 +25,129 @@ Le projet suit une méthodologie rigoureuse comprenant :
 
 ## Conclusion  
 Ce travail met en lumière l’efficacité des techniques de machine learning dans la détection d’intrusions réseau, offrant une approche fiable et évolutive pour la protection des systèmes d’information face aux cybermenaces modernes.
+
++---------------------+
+|     DataLoader      |
++---------------------+
+| - dataset_path      |
+| - delimiter         |
++---------------------+
+| + load_data()       |
+| + split_train_test()|
++---------------------+
+
+         |
+         ▼
++-------------------------+
+|   DataPreprocessor      |
++-------------------------+
+| - categorical_features  |
+| - numerical_features    |
++-------------------------+
+| + handle_missing_values() |
+| + encode_features()     |
+| + normalize_features()  |
++-------------------------+
+
+         |
+         ▼
++------------------------+
+|   FeatureEngineer      |
++------------------------+
+| - selected_features    |
++------------------------+
+| + select_features()    |
+| + extract_new_features()|
++------------------------+
+
+         |
+         ▼
++------------------------+
+|     ModelTrainer       |
++------------------------+
+| - model_type           |
+| - hyperparameters      |
++------------------------+
+| + train_model()        |
+| + evaluate_model()     |
++------------------------+
+          |
+          ▼
++------------------------+
+|       Evaluator        |
++------------------------+
+| - metrics              |
++------------------------+
+| + compute_metrics()    |
+| + plot_roc_curve()     |
++------------------------+
+
+         ▲
+         |
++------------------------+
+|       Predictor        |
++------------------------+
+| - trained_model        |
++------------------------+
+| + predict()            |
+| + predict_proba()      |
++------------------------+
+
+         ▲
+         |
++-------------------------------+
+|         MainPipeline          |
++-------------------------------+
+| + run_full_pipeline()         |
++-------------------------------+
+|  Utilise les composants :     |
+|  - DataLoader                 |
+|  - DataPreprocessor           |
+|  - FeatureEngineer            |
+|  - ModelTrainer               |
+|  - Evaluator                  |
+|  - Predictor                  |
++-------------------------------+
+
+
+#########################################################################################""
+
+# Pipeline ELK + Machine Learning – Version Locale (v1)
+  # 1 Objectif
+Ce projet implémente une architecture locale permettant de détecter des intrusions à partir de logs réseau, en temps réel, à l’aide :
+      1/ d’un modèle de Machine Learning XGBoost intégré dans une API Flask,
+      2/ d’une stack ELK (Elasticsearch, Logstash, Kibana),
+      3/ et de Filebeat pour l’expédition des logs vers Logstash.
+# 2 Architecture générale
+
+ 1/graph TD
+    A[Serveur de logs simulé] -->|JSON logs| B[Filebeat]
+    B --> C[Logstash]
+    C -->|Appel HTTP| D[API Flask (ML)]
+    D -->|Résultat prédiction| C
+    C --> E[Elasticsearch]
+    E --> F[Kibana]
+ 2/  Stack utilisée
+Composant	Version	Rôle
+Python	3.x	Exécution du modèle ML et scripts
+Flask	2.3.3	API REST de prédiction ML
+XGBoost	3.0.0	Modèle de détection d'intrusions
+scikit-learn	1.3.2	Prétraitement et compatibilité ML
+Filebeat	8.8.0	Expédition de logs vers Logstash
+Logstash	8.8.0	Pipeline de traitement des logs
+Elasticsearch	8.8.0	Indexation et stockage des événements
+Kibana	8.8.0	Visualisation en temps réel
+3/ Fonctionnement automatique
+Le script start_pipeline.bat exécute automatiquement les composants suivants dans l’ordre :
+ 1 . Nettoyage de l’état Filebeat (registry)
+ 2 .Démarrage de :
+      * Elasticsearch
+      * Kibana
+      * API Flask (serveur ML)
+      * Logstash
+      * Filebeat
+      * Simulateur de logs JSON
+3 . Ouverture automatique de Kibana dans le navigateur
+
+
+
