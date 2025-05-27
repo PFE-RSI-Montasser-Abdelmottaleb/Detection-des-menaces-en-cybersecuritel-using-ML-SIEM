@@ -48,6 +48,7 @@ Ce projet implémente une architecture locale permettant de détecter des intrus
  2/  Stack utilisée
 
 Composant	Version	Rôle
+
 Python	3.x	Exécution du modèle ML et scripts
 Flask	2.3.3	API REST de prédiction ML
 XGBoost	3.0.0	Modèle de détection d'intrusions
@@ -56,16 +57,27 @@ Filebeat	8.8.0	Expédition de logs vers Logstash
 Logstash	8.8.0	Pipeline de traitement des logs
 Elasticsearch	8.8.0	Indexation et stockage des événements
 Kibana	8.8.0	Visualisation en temps réel
+
 3/ Fonctionnement automatique
+
 Le script start_pipeline.bat exécute automatiquement les composants suivants dans l’ordre :
+
  1 . Nettoyage de l’état Filebeat (registry)
+ 
  2 .Démarrage de :
+ 
       * Elasticsearch
+      
       * Kibana
+      
       * API Flask (serveur ML)
+      
       * Logstash
+      
       * Filebeat
+      
       * Simulateur de logs JSON
+      
 3 . Ouverture automatique de Kibana dans le navigateur
 
 
