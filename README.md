@@ -1,4 +1,4 @@
-# Détection des Menaces en Cybersécurité avec Machine Learning et Dataset NSL-KDD 🛡️
+# I Détection des Menaces en Cybersécurité avec Machine Learning et Dataset NSL-KDD 
 
 ## Introduction  
 Ce projet s’inscrit dans le domaine critique de la cybersécurité, axé sur la détection d’intrusions réseau. Il exploite le dataset NSL-KDD, une référence améliorée issue du KDD Cup 1999, reconnue pour sa robustesse et son intérêt scientifique. L’objectif est d’évaluer des modèles de machine learning capables d’identifier efficacement les comportements malveillants dans le trafic réseau.
@@ -26,93 +26,9 @@ Le projet suit une méthodologie rigoureuse comprenant :
 ## Conclusion  
 Ce travail met en lumière l’efficacité des techniques de machine learning dans la détection d’intrusions réseau, offrant une approche fiable et évolutive pour la protection des systèmes d’information face aux cybermenaces modernes.
 
-+---------------------+
-|     DataLoader      |
-+---------------------+
-| - dataset_path      |
-| - delimiter         |
-+---------------------+
-| + load_data()       |
-| + split_train_test()|
-+---------------------+
-
-         |
-         ▼
-+-------------------------+
-|   DataPreprocessor      |
-+-------------------------+
-| - categorical_features  |
-| - numerical_features    |
-+-------------------------+
-| + handle_missing_values() |
-| + encode_features()     |
-| + normalize_features()  |
-+-------------------------+
-
-         |
-         ▼
-+------------------------+
-|   FeatureEngineer      |
-+------------------------+
-| - selected_features    |
-+------------------------+
-| + select_features()    |
-| + extract_new_features()|
-+------------------------+
-
-         |
-         ▼
-+------------------------+
-|     ModelTrainer       |
-+------------------------+
-| - model_type           |
-| - hyperparameters      |
-+------------------------+
-| + train_model()        |
-| + evaluate_model()     |
-+------------------------+
-          |
-          ▼
-+------------------------+
-|       Evaluator        |
-+------------------------+
-| - metrics              |
-+------------------------+
-| + compute_metrics()    |
-| + plot_roc_curve()     |
-+------------------------+
-
-         ▲
-         |
-+------------------------+
-|       Predictor        |
-+------------------------+
-| - trained_model        |
-+------------------------+
-| + predict()            |
-| + predict_proba()      |
-+------------------------+
-
-         ▲
-         |
-+-------------------------------+
-|         MainPipeline          |
-+-------------------------------+
-| + run_full_pipeline()         |
-+-------------------------------+
-|  Utilise les composants :     |
-|  - DataLoader                 |
-|  - DataPreprocessor           |
-|  - FeatureEngineer            |
-|  - ModelTrainer               |
-|  - Evaluator                  |
-|  - Predictor                  |
-+-------------------------------+
-
-
 #########################################################################################""
 
-# Pipeline ELK + Machine Learning – Version Locale (v1)
+# II Pipeline ELK + Machine Learning – Version Locale (v1)
   # 1 Objectif
 Ce projet implémente une architecture locale permettant de détecter des intrusions à partir de logs réseau, en temps réel, à l’aide :
       1/ d’un modèle de Machine Learning XGBoost intégré dans une API Flask,
