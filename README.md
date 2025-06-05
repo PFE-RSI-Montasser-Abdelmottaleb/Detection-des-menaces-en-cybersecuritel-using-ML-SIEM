@@ -1,4 +1,4 @@
-# I Détection des Menaces en Cybersécurité avec Machine Learning et Dataset NSL-KDD 
+# I Détection Intelligente des Intrusions en Cybersécurité avec Machine Learning et Dataset NSL-KDD 
 
 ## Introduction  
 Ce projet s’inscrit dans le domaine critique de la cybersécurité, axé sur la détection d’intrusions réseau. Il exploite le dataset NSL-KDD, une référence améliorée issue du KDD Cup 1999, reconnue pour sa robustesse et son intérêt scientifique. L’objectif est d’évaluer des modèles de machine learning capables d’identifier efficacement les comportements malveillants dans le trafic réseau.
