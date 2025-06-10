@@ -163,7 +163,7 @@ Pie chart : ratio attaques / trafic normal
 
 Table : top protocoles/services associés aux attaques
 
-⚠️ Alerte (à faire )
+#Alerte 
 
 activer des alertes dans Kibana (via Stack Management → Rules) pour détecter en temps réel :
 
