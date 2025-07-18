@@ -1,2 +1,0 @@
-{"duration": 52, "protocol_type": "tcp", "service": "http", "flag": "REJ", "src_bytes": 1, "dst_bytes": 99, "wrong_fragment": 0, "hot": 0, "logged_in": 0, "num_compromised": 2, "count": 80, "srv_count": 92, "serror_rate": 1.0, "srv_serror_rate": 1.0, "rerror_rate": 0.0}
-{"duration": 31, "protocol_type": "icmp", "service": "smtp", "flag": "SF", "src_bytes": 1191, "dst_bytes": 4854, "wrong_fragment": 0, "hot": 0, "logged_in": 1, "num_compromised": 0, "count": 67, "srv_count": 20, "serror_rate": 0.0, "srv_serror_rate": 0.0, "rerror_rate": 0.0}
