@@ -1,1 +1,0 @@
-﻿{"duration": 0, "protocol_type": "tcp", "service": "http", "flag": "SF", "src_bytes": 181, "dst_bytes": 5450, "wrong_fragment": 0, "hot": 0, "logged_in": 1, "num_compromised": 0, "count": 511, "srv_count": 511, "serror_rate": 0.0, "srv_serror_rate": 0.0, "rerror_rate": 0.0}
