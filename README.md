@@ -1,10 +1,10 @@
 # Aprés installation de requirements  et jdk pour la version local:
 
-# 1/ Model_ML :python  ML_Detection_Intrusion.py
+# 1/ Model_ML :python     ML_Detection_Intrusion.py
 
 # 2/ PipelineELK_ML_DockerV2 :
 
-#    PS D:\PFE Detection Intrusion ML_ELK\Script_Principal\PipelineELK_ML_DockerV2\project-root\flask_app>docker-compose build puis docker-compose up -d
+#    docker-compose build     puis     docker-compose up -d
 
 # 3/PipelineELK_ML_Local : aprés installation du stack ELK dans le local : exécuter
 
